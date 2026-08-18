@@ -13,4 +13,4 @@ print("PyBugHelper 2026 Super PYTHON - askarnav")
 # from .debugger import BugHelper
 # __all__ = ["BugHelper"]
 
-from . import dataman, file_manager, crypt, games, logger, maths, validate
+from pybughelper import dataman, file_manager, crypt, games, logger, maths, validate
