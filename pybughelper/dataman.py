@@ -9,7 +9,6 @@ class SQLX:
     safely using clean python context execution managers. Handles connection
     lifecycles, row conversions to native dict formats, and tuple verification.
     """
-
     def __init__(self, db_path):
         """
         Initializes the connection and configures row processing factory defaults.
@@ -48,6 +47,7 @@ class SQLX:
         self.cursor.execute(query)
         self.data.commit()
 
+    # noinspection PyMethodMayBeStatic
     def _ensure_tuple(self, params):
         """Standardizes single arguments or collections into query-safe tuple variables."""
         if isinstance(params, (list, tuple)):
