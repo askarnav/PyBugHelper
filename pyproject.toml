@@ -5,4 +5,18 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pybughelper"
 version = "2026.0.0"
+description = "A package to help you debug Python code."
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name = "askarnav" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["pybughelper*"]
