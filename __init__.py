@@ -1,6 +1,6 @@
 # __init__.py
 
-"""PyBugHelper: A package to help you debug Python code."""
+"""PyBugHelper: A package to help you shorten Python code."""
 
 __version__ = "2026.0.0"
 __author__ = "askarnav"
